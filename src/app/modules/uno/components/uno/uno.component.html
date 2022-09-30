@@ -1,0 +1,10 @@
+<p>uno works!</p>
+<div *ngIf="character$ | async as character">
+    <!--{{character|json}}-->
+    <div *ngFor =" let char of character.character.results">
+        <h2>{{char.name}}</h2>
+        <img [src]="char.image">
+        <hr>
+    </div>
+    
+</div>
